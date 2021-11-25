@@ -76,6 +76,16 @@ class SpotifyHandler:
 
     def get_song_widget(self, title_name_id):
         pass
+
+
+    # user requested search
+    def search_for_song(self, song_title:str, artist_name = ''):
+        res = None
+        if artist_name == '':
+            res = self.sp.search(q='track:' + song_title, type='track', limit=5)
+        else:
+            res = self.sp.search(q='track:' + song_title + ' artist:'+ artist_name , type='track', limit=5)
+        return res
     
     
     

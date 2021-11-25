@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+        <form method="post">
+        <div class="container">
+            <div class="row">
+            {% for song in songs %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                    <iframe src= {{song}} width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture">
+                    </iframe>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-8 col-sm-6">
+                                <div class="btn-group-vertical">
+                                    <button type="submit" name="button" class="btn btn-success" value="keep">keep</button>
+                                    <button type="submit" name="button" class="btn btn-warning" value="change">change</button>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        </form>
+        <p>
+        <form method="post">
+            <button type="submit" name="button" class="btn btn-success" value="add song">add song</button>
+            <button type="submit" name="button" class="btn btn-danger" value="drop">drop song</button>
+        </form>
+        </p>
+    </div>
+{% endblock %}

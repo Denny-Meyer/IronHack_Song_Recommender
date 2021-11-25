@@ -1,113 +1,53 @@
-import pandas
-from CrawlerModule.WebCrawler import WebCrawler as crawler
-from ServerModule.CrawlerServer import application as app
-from SongManageModule.song_manage import Song_Mangaer as smang
-from SpotifyModule.spotifyHandler import SpotifyHandler as spoti
-
-import os, sys
-import pandas as pd
+import MachLearnModule.cluster_network as cluster
+from SpotifyModule.spotifyHandler import SpotifyHandler as spotify
 
 
-class Programm:
+from flask import Flask, render_template
+from flask.globals import request
+from werkzeug.utils import redirect
+
+
+
+
+flask_app = Flask(__name__)
 
     
 
-    def __init__(self) -> None:
-        self.server = None
-        self.crawl = None
-        self.spoti_app = spoti()    
-        pass
+
+'''
+init spotify account
+init kmean network
+'''
+spoty = spotify()
+songs = []
+#self.cluster = cluster()
 
 
-    def start_server(self):
-        server = app()
-        server.run()
-        pass
-
-
-    def start_web_crawler(self):
-        self.crawl = crawler()
-        if self.crawl.music_table == None:
-            if not self.crawl.load_data_from_csv():
-                self.crawl.search_hundred_songs_page()
-                self.crawl.store_data_in_csv()
-        #print(self.crawl.music_table)
-        pass
     
-
-    def run_program(self):
-        #self.start_web_crawler()
-        #self.create_data_from_table(self.crawl.music_table)
-        #self.create_data_from_playlist()
-        self.start_server()
-        pass
-
-
-
-    def create_data_from_table(self, table):
-        res = list(self.crawl.get_artists_from_table())
-        set_res = set(res)
-        for name in set_res:
-            print('create for',name)
-            self.spoti_app.create_csv_from_artist(name)
-        
     
-    def create_data_from_playlist(self, filename='../data/spotify_top.txt'):
-        with open(filename) as f:
-            play_list_ids = f.readlines()
-
-            ids = []
-            for i in play_list_ids:
-                id_raw = i.strip()
-                if id_raw.startswith('http'):
-                    id_raw = id_raw.split('/')[-1]
-                    id_raw = id_raw.rsplit('?')[0]
-                    i = id_raw
-                
-                ids.append(i)
-
-            results = []
-            for id in ids:
-                results.extend(self.spoti_app.get_artist_from_playlist(str(id)))
-            
-            art_list = set(results)
-            for art in art_list:
-                print('create for',art)
-                self.spoti_app.create_csv_from_artist(art)
+@flask_app.route('/', methods=['GET','POST'])
+def index():
+    
+    
+    if request.method == 'POST':
+        if request.form['button'] == 'add song':
+            songs.append("https://open.spotify.com/embed/track/7tthMTxuAH4G0WkQkiT3t2?utm_source=generator")
+        if request.form['button'] == 'drop':
+            if len(songs) > 0:
+                songs.pop()
+        return render_template('home.html', 
+        title = "Music Referender",
+        description="Smart page for music recomandation",
+        songs=songs)
+    else:        
+        return render_template( 
+        'home.html', 
+        title = "Jinja Demo Site",
+        description="Smarter page templates with Flask & Jinja.",
+        songs=songs)
 
 
 
-class TestClass:
 
-    def concate_all_csv(self, folder = '../data/artist_data/'):
-        f = os.listdir(folder)
-        files = []
-        for i in f:
-            if i.endswith('.csv'):
-                files.append(i)
-        frames = []
-        print('number of csv files',len(files))
-        for elem in files:
-            d = pd.read_csv(folder + elem)
-            d.drop(columns=['Unnamed: 0', 'track_id'], inplace=True)
-            frames.append(d)
-        
-        res = pd.concat(frames, ignore_index=True )
-        res.drop_duplicates(inplace=True)
-        print(res)
-        print(res.duplicated().sum())
-        print('write data')
-        res.to_csv('../data/song_data.csv')
-        
-
-
-if __name__ == '__main__':
-    print(sys.argv)
-    if len(sys.argv) > 1:
-        if sys.argv[1] == '-test': 
-            TestClass()
-        if sys.argv[1] == '-writecsv':
-            TestClass().concate_all_csv()
-            pass
-    else:
-        Programm().run_program()
+if __name__ == "__main__":
+    flask_app.run(debug=True)
