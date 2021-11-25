@@ -93,8 +93,9 @@ class TestClass:
         
         res = pd.concat(frames, ignore_index=True )
         print(res)
+        print(res.duplicated().sum())
 
 
 if __name__ == '__main__':
-    #TestClass().concate_all_csv()
-    Programm().run_program()
+    TestClass().concate_all_csv()
+    #Programm().run_program()
