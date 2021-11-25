@@ -88,14 +88,17 @@ class TestClass:
         print('number of csv files',len(files))
         for elem in files:
             d = pd.read_csv(folder + elem)
-            d.drop(columns='Unnamed: 0')
+            d.drop(columns=['Unnamed: 0', 'track_id'], inplace=True)
             frames.append(d)
         
         res = pd.concat(frames, ignore_index=True )
+        res.drop_duplicates(inplace=True)
         print(res)
         print(res.duplicated().sum())
+        print('write data')
+        res.to_csv('../data/song_data.csv')
 
 
 if __name__ == '__main__':
-    #TestClass().concate_all_csv()
-    Programm().run_program()
+    TestClass().concate_all_csv()
+    #Programm().run_program()
