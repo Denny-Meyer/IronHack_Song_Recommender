@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.595,0.373,7,-6.961,1,0.0383,0.154,0,0.131,0.229,108.009,audio_features,4SLV1kwfWgTVgYjxl9wf4y,spotify:track:4SLV1kwfWgTVgYjxl9wf4y,https://api.spotify.com/v1/tracks/4SLV1kwfWgTVgYjxl9wf4y,https://api.spotify.com/v1/audio-analysis/4SLV1kwfWgTVgYjxl9wf4y,192431,4,Haunted House,spotify:track:4SLV1kwfWgTVgYjxl9wf4y,Mckenna Grace,1ZjXhESKpjsv31L7ykuJBE
