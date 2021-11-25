@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.753,0.713,8,-7.108,1,0.27,0.412,0,0.265,0.761,89.93,audio_features,6SEWQ6FTHXwXhwNjsqVL6J,spotify:track:6SEWQ6FTHXwXhwNjsqVL6J,https://api.spotify.com/v1/tracks/6SEWQ6FTHXwXhwNjsqVL6J,https://api.spotify.com/v1/audio-analysis/6SEWQ6FTHXwXhwNjsqVL6J,147401,4,Trust Nobody,spotify:track:6SEWQ6FTHXwXhwNjsqVL6J,North Ave Jax,7t3WSgiRVbVsTIbsgcHVrY
