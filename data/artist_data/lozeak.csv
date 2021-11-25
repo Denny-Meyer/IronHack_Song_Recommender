@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.611,0.84,8,-4.672,1,0.147,0.0214,0.00671,0.21,0.302,129.912,audio_features,579Toef3RjBEXfFMXvwkqp,spotify:track:579Toef3RjBEXfFMXvwkqp,https://api.spotify.com/v1/tracks/579Toef3RjBEXfFMXvwkqp,https://api.spotify.com/v1/audio-analysis/579Toef3RjBEXfFMXvwkqp,146901,4,Word Vomit,spotify:track:579Toef3RjBEXfFMXvwkqp,lozeak,0neQuv6AF4kuA82CZcPoAc
