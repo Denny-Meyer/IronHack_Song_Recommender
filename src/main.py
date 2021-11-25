@@ -4,7 +4,7 @@ from ServerModule.CrawlerServer import application as app
 from SongManageModule.song_manage import Song_Mangaer as smang
 from SpotifyModule.spotifyHandler import SpotifyHandler as spoti
 
-import os
+import os, sys
 import pandas as pd
 
 
@@ -36,10 +36,11 @@ class Programm:
     
 
     def run_program(self):
-        self.start_web_crawler()
+        #self.start_web_crawler()
         #self.create_data_from_table(self.crawl.music_table)
-        self.create_data_from_playlist()
-        #self.start_server()
+        #self.create_data_from_playlist()
+        self.start_server()
+        pass
 
 
 
@@ -97,8 +98,16 @@ class TestClass:
         print(res.duplicated().sum())
         print('write data')
         res.to_csv('../data/song_data.csv')
+        
 
 
 if __name__ == '__main__':
-    TestClass().concate_all_csv()
-    #Programm().run_program()
+    print(sys.argv)
+    if len(sys.argv) > 1:
+        if sys.argv[1] == '-test': 
+            TestClass()
+        if sys.argv[1] == '-writecsv':
+            TestClass().concate_all_csv()
+            pass
+    else:
+        Programm().run_program()
