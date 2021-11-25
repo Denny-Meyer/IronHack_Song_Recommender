@@ -4,7 +4,7 @@ import requests as req
 import pandas as pd
 from random import randrange
 import os
-
+import time
 
 class WebCrawler():
 
@@ -60,7 +60,11 @@ class WebCrawler():
         self.music_table['song'] = self.music_table['song'].str.lower()
         self.music_table['artist'] = self.music_table['artist'].str.lower()
         pass
-
+    
+    def get_artists_from_table(self) -> list:
+        #print(self.music_table['artist'].unique())
+        return self.music_table['artist']
+        pass
 
     def search_web_page(self, url_name):
         pass
@@ -74,9 +78,12 @@ class WebCrawler():
 
     def load_data_from_csv(self, filename='../data/song_list.csv') -> bool:
         if os.path.isfile(filename):
-            self.music_table = pd.read_csv(filename)
+            # check modify time - if older 7 days should fetch from internet
+            #print('file time ',os.path.getctime(filename) - time.localtime)
+            if os.path.getmtime(filename) > 252000:
+                self.music_table = pd.read_csv(filename)
+
             return True
         else:
             print('no file found, please create new data file')
-        
         return False
