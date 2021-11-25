@@ -96,5 +96,5 @@ class TestClass:
 
 
 if __name__ == '__main__':
-    TestClass().concate_all_csv()
-    #Programm().run_program()
+    #TestClass().concate_all_csv()
+    Programm().run_program()
