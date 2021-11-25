@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.647,0.186,9,-18.718,0,0.031,0.851,0.886,0.101,0.2,80.008,audio_features,6YsXDpB5gqbNZiAIn8T4Ty,spotify:track:6YsXDpB5gqbNZiAIn8T4Ty,https://api.spotify.com/v1/tracks/6YsXDpB5gqbNZiAIn8T4Ty,https://api.spotify.com/v1/audio-analysis/6YsXDpB5gqbNZiAIn8T4Ty,147000,4,Upward Falling,spotify:track:6YsXDpB5gqbNZiAIn8T4Ty,Tamala Bay,2lncpX7wgkhvlIkw7ozMRj

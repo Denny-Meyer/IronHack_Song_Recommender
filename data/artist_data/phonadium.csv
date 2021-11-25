@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.608,0.403,1,-12.66,0,0.0317,0.773,0.878,0.102,0.487,144.066,audio_features,3nhzAqz5Asv0avIhJ1g63u,spotify:track:3nhzAqz5Asv0avIhJ1g63u,https://api.spotify.com/v1/tracks/3nhzAqz5Asv0avIhJ1g63u,https://api.spotify.com/v1/audio-analysis/3nhzAqz5Asv0avIhJ1g63u,106667,4,twin planet,spotify:track:3nhzAqz5Asv0avIhJ1g63u,phonadium,1EbUbtNohBB2nDSZVdb0P8

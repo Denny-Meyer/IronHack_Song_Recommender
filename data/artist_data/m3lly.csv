@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.453,0.305,0,-14.073,1,0.0805,0.905,0.924,0.104,0.141,172.625,audio_features,2nG9Kq8al1Y8CwuikqWXut,spotify:track:2nG9Kq8al1Y8CwuikqWXut,https://api.spotify.com/v1/tracks/2nG9Kq8al1Y8CwuikqWXut,https://api.spotify.com/v1/audio-analysis/2nG9Kq8al1Y8CwuikqWXut,126393,5,mararun,spotify:track:2nG9Kq8al1Y8CwuikqWXut,m3lly,6ImTBYsoSoDNEMgY9VFU23

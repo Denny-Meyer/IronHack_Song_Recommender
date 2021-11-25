@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.493,0.13,5,-18.718,0,0.0873,0.927,0.945,0.105,0.415,79.631,audio_features,5Q4X6JGfoZM89iGSNGt2XR,spotify:track:5Q4X6JGfoZM89iGSNGt2XR,https://api.spotify.com/v1/tracks/5Q4X6JGfoZM89iGSNGt2XR,https://api.spotify.com/v1/audio-analysis/5Q4X6JGfoZM89iGSNGt2XR,135980,4,Purple & Yellow,spotify:track:5Q4X6JGfoZM89iGSNGt2XR,Idyllik Beat,2iIteXiNI5fVOATQamujmX

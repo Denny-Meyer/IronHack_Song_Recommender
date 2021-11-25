@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.712,0.448,2,-14.435,1,0.112,0.629,0.895,0.103,0.516,78.997,audio_features,4cGB1bYpm6kvBMUERmaFHl,spotify:track:4cGB1bYpm6kvBMUERmaFHl,https://api.spotify.com/v1/tracks/4cGB1bYpm6kvBMUERmaFHl,https://api.spotify.com/v1/audio-analysis/4cGB1bYpm6kvBMUERmaFHl,124376,4,florida keys,spotify:track:4cGB1bYpm6kvBMUERmaFHl,Kolorama,7KYVAGDhdO4DJ4qyeTWpcC

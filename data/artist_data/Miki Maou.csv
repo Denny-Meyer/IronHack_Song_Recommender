@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.778,0.256,5,-16.845,0,0.0616,0.378,0.842,0.208,0.313,138.08,audio_features,3GRTUabfguVlwCQmU3W7ps,spotify:track:3GRTUabfguVlwCQmU3W7ps,https://api.spotify.com/v1/tracks/3GRTUabfguVlwCQmU3W7ps,https://api.spotify.com/v1/audio-analysis/3GRTUabfguVlwCQmU3W7ps,160000,4,Excellent,spotify:track:3GRTUabfguVlwCQmU3W7ps,Miki Maou,1BVujMA5brgpV9fRkNUeFS

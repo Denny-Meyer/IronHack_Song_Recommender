@@ -110,11 +110,11 @@ class SpotifyHandler:
         return {'features':features, 'artist_name' :res['artist_name']}
 
 
-    def create_csv_from_artist(self, artist_name):
+    def create_csv_from_artist(self, artist_name: str):
         
         file_name = artist_name
-        if artist_name in '/':
-            file_name = file_name.replace('/','-')
+        file_name.replace('/','-')
+        print('file_name:',file_name)
 
         if not os.path.isfile('../data/artist_data/' + file_name + '.csv'):
             res = self.fetch_features_for_artist_name(artist_name= artist_name)

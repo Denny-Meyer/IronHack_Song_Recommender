@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.748,0.141,9,-18.144,1,0.101,0.799,0.673,0.104,0.468,158.001,audio_features,0rNTOI1K11CSPTj3dvq1tU,spotify:track:0rNTOI1K11CSPTj3dvq1tU,https://api.spotify.com/v1/tracks/0rNTOI1K11CSPTj3dvq1tU,https://api.spotify.com/v1/audio-analysis/0rNTOI1K11CSPTj3dvq1tU,118481,4,Breeze 52,spotify:track:0rNTOI1K11CSPTj3dvq1tU,Pluto Tracks,1JFmZ9XvgZnVttQHe8RSj1

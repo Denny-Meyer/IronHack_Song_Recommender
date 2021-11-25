@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.609,0.241,4,-15.286,1,0.0732,0.65,0.916,0.109,0.349,170.083,audio_features,0pUYzh1ywTsyy25UoZTuTG,spotify:track:0pUYzh1ywTsyy25UoZTuTG,https://api.spotify.com/v1/tracks/0pUYzh1ywTsyy25UoZTuTG,https://api.spotify.com/v1/audio-analysis/0pUYzh1ywTsyy25UoZTuTG,151824,4,Babbling Brook,spotify:track:0pUYzh1ywTsyy25UoZTuTG,rsbd,4vdsmVFfnqCP6QvVpDYRTv

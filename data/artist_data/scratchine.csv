@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.656,0.48,6,-9.602,0,0.0788,0.859,0.825,0.117,0.205,76.468,audio_features,17EyMtoMHoVj1LQyOluAEO,spotify:track:17EyMtoMHoVj1LQyOluAEO,https://api.spotify.com/v1/tracks/17EyMtoMHoVj1LQyOluAEO,https://api.spotify.com/v1/audio-analysis/17EyMtoMHoVj1LQyOluAEO,149571,4,sound by night,spotify:track:17EyMtoMHoVj1LQyOluAEO,scratchine,7tDgvVUF0rqcdI44ZKWMHh

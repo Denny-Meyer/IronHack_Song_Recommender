@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.361,0.231,4,-9.684,0,0.0375,0.924,0,0.17,0.359,167.544,audio_features,5XqmNCCleex8nzKmILOjTD,spotify:track:5XqmNCCleex8nzKmILOjTD,https://api.spotify.com/v1/tracks/5XqmNCCleex8nzKmILOjTD,https://api.spotify.com/v1/audio-analysis/5XqmNCCleex8nzKmILOjTD,130339,4,Valentine,spotify:track:5XqmNCCleex8nzKmILOjTD,Luna Delirious,3KBcvk50M8TwHU1ErIGrsC

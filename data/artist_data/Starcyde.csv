@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.7,0.858,7,-2.927,1,0.379,0.135,0.000263,0.161,0.349,84.443,audio_features,1Dr2GWTBgcSm29Xz6TMDvW,spotify:track:1Dr2GWTBgcSm29Xz6TMDvW,https://api.spotify.com/v1/tracks/1Dr2GWTBgcSm29Xz6TMDvW,https://api.spotify.com/v1/audio-analysis/1Dr2GWTBgcSm29Xz6TMDvW,211953,4,Greater Heights,spotify:track:1Dr2GWTBgcSm29Xz6TMDvW,Starcyde,1p2IKEnHMEMpst86kahOYw

@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.727,0.45,1,-12.014,1,0.0494,0.632,0.895,0.114,0.213,129.995,audio_features,4faneCEP0jeHgrp8N0mLf4,spotify:track:4faneCEP0jeHgrp8N0mLf4,https://api.spotify.com/v1/tracks/4faneCEP0jeHgrp8N0mLf4,https://api.spotify.com/v1/audio-analysis/4faneCEP0jeHgrp8N0mLf4,150837,4,soft as water,spotify:track:4faneCEP0jeHgrp8N0mLf4,mashhha,02Nxr8HUMZN8u2mVNt10dM

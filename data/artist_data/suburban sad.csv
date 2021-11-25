@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.39,0.254,9,-18.375,1,0.0403,0.787,0.401,0.544,0.167,119.653,audio_features,6iDThqdBhVmWXoMsXIw0XV,spotify:track:6iDThqdBhVmWXoMsXIw0XV,https://api.spotify.com/v1/tracks/6iDThqdBhVmWXoMsXIw0XV,https://api.spotify.com/v1/audio-analysis/6iDThqdBhVmWXoMsXIw0XV,136000,4,books & backpacks,spotify:track:6iDThqdBhVmWXoMsXIw0XV,suburban sad,5jL3irFL2TtSPQOo8v3Nya

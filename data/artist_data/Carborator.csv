@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.676,0.249,1,-10.048,0,0.0802,0.737,0.899,0.251,0.4,79.961,audio_features,4DEHwA8wStG2BQraOkuFLB,spotify:track:4DEHwA8wStG2BQraOkuFLB,https://api.spotify.com/v1/tracks/4DEHwA8wStG2BQraOkuFLB,https://api.spotify.com/v1/audio-analysis/4DEHwA8wStG2BQraOkuFLB,171000,4,Freshair,spotify:track:4DEHwA8wStG2BQraOkuFLB,Carborator,3YPjCkxMec5GzFenbxDOgO
