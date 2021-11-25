@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.52,0.437,3,-15.987,0,0.514,0.965,0.501,0.137,0.651,78.829,audio_features,2UCDo9LZZE9IDsDihDIa62,spotify:track:2UCDo9LZZE9IDsDihDIa62,https://api.spotify.com/v1/tracks/2UCDo9LZZE9IDsDihDIa62,https://api.spotify.com/v1/audio-analysis/2UCDo9LZZE9IDsDihDIa62,143589,4,anti-skate,spotify:track:2UCDo9LZZE9IDsDihDIa62,cruzcamra,5U5yZ3Xe35tZQtKBSAicl6

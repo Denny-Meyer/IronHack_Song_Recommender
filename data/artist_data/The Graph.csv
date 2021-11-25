@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.921,0.287,10,-10.859,0,0.137,0.805,0.84,0.104,0.679,132.181,audio_features,3YegC72pbwviu6fy5zbPh3,spotify:track:3YegC72pbwviu6fy5zbPh3,https://api.spotify.com/v1/tracks/3YegC72pbwviu6fy5zbPh3,https://api.spotify.com/v1/audio-analysis/3YegC72pbwviu6fy5zbPh3,166336,5,Shingo,spotify:track:3YegC72pbwviu6fy5zbPh3,The Graph,4bwrakWnAq3spXK7FvNqwY

@@ -1,0 +1,2 @@
+,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature,track_name,track_id,artist_name,artist_id
+0,0.751,0.194,9,-13.311,0,0.154,0.253,0.731,0.138,0.314,160.017,audio_features,1SFBHnALpYpILOUjPEtLsd,spotify:track:1SFBHnALpYpILOUjPEtLsd,https://api.spotify.com/v1/tracks/1SFBHnALpYpILOUjPEtLsd,https://api.spotify.com/v1/audio-analysis/1SFBHnALpYpILOUjPEtLsd,135000,4,Mesh,spotify:track:1SFBHnALpYpILOUjPEtLsd,Detainment System,0lw9h7wdLjwlyq40RghxnK
