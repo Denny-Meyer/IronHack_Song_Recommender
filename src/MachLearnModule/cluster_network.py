@@ -35,7 +35,8 @@ class ClusterNetwork:
             self.raw_data = pd.read_csv(data_file)
             self.raw_data.drop(columns='Unnamed: 0', inplace=True)
             self.cluster_data = self.raw_data._get_numeric_data()
-        
+
+            self.set_scaler_on_cluster_data()
             self.create_scaled_data()
             self.set_labels()
         pass
@@ -67,9 +68,19 @@ class ClusterNetwork:
     
     def set_labels(self):
         self.labels = self.kmeans.predict(self.scaled_cluster_data)
+        self.raw_data['cluster'] = self.labels
         print(self.labels)
 
     # todo set data
+
+    def get_cluster_from_new_input(self, new_val):
+        res_new = pd.DataFrame(new_val)
+        res_num = res_new._get_numeric_data()
+        res_num_scaled = self.scaler.transform(res_num)
+        res_clust = self.kmeans.predict(res_num_scaled)
+        result = self.raw_data[self.raw_data['cluster'] == res_clust[0]].sample()
+        return result['id']
+
 
     def run_cluster_cycle(self) -> None:
         self.set_scaler_on_cluster_data()

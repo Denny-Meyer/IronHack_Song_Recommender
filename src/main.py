@@ -21,27 +21,47 @@ init kmean network
 spoty = spotify()
 songs = []
 clust = cluster()
+recommend=""
+
+
+def get_recommend(search_id):
+    print('search_id',search_id)
+    if search_id != 'search_song':
+        res = spoty.get_title_features(search_id)
+        result = clust.get_cluster_from_new_input(res)
+        result = list(result)
+        return 'https://open.spotify.com/embed/track/'+result[0]+'?utm_source=generator'
+
 
 r = spoty.search_for_song('heros david')
 
 res =spoty.get_title_features(r[0][-1])[0]
 
 songs.append('https://open.spotify.com/embed/track/'+res['id']+'?utm_source=generator')    
-    
+#songs_id.append(res['id'])
 @flask_app.route('/', methods=['GET','POST'])
 def index():
     
     
     if request.method == 'POST':
-        if request.form['button'] == 'add song':
-            songs.append("https://open.spotify.com/embed/track/7tthMTxuAH4G0WkQkiT3t2?utm_source=generator")
-        if request.form['button'] == 'drop':
-            if len(songs) > 0:
-                songs.pop()
+        if request.form['button'] == 'search_song':
+            search_string = request.form['search_text']
+            res = spoty.search_for_song(search_string)
+            songs.clear()
+            for r in res:
+                #print(r)
+                songs_id = r[-1].split(':')[-1]
+                songs.append(["https://open.spotify.com/embed/track/"+r[-1].split(':')[-1]+"?utm_source=generator", songs_id])
+        if request.form.get('button'):
+            res_id = request.form['button']
+            recommend = get_recommend(res_id)
         return render_template('home.html', 
         title = "Music Referender",
         description="Smart page for music recomandation",
-        songs=songs)
+        songs=songs,
+        recommend=recommend
+        )
+
     else:        
         return render_template( 
         'home.html', 
