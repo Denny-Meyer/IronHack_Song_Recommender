@@ -85,9 +85,13 @@ class SpotifyHandler:
             res = self.sp.search(q='track:' + song_title, type='track', limit=5)
         else:
             res = self.sp.search(q='track:' + song_title + ' artist:'+ artist_name , type='track', limit=5)
-        return res
+        req = []
+        for i in res['tracks']['items']:
+            req.append([i['name'], i['artists'][0]['name'], i['uri']])
+        return  req
     
-    
+
+
     
     def fetch_features_for_artist_name(self, artist_name : str)-> dict:
 

@@ -1,4 +1,4 @@
-import MachLearnModule.cluster_network as cluster
+from MachLearnModule.cluster_network import  ClusterNetwork as cluster
 from SpotifyModule.spotifyHandler import SpotifyHandler as spotify
 
 
@@ -20,10 +20,13 @@ init kmean network
 '''
 spoty = spotify()
 songs = []
-#self.cluster = cluster()
+clust = cluster()
 
+r = spoty.search_for_song('heros david')
 
-    
+res =spoty.get_title_features(r[0][-1])[0]
+
+songs.append('https://open.spotify.com/embed/track/'+res['id']+'?utm_source=generator')    
     
 @flask_app.route('/', methods=['GET','POST'])
 def index():
