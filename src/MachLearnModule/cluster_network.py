@@ -11,7 +11,9 @@ import matplotlib.pyplot as plt
 
 
 # take model with k 10
-model_file = '../data/models/kmeans_10.pickle'
+model_file = '../data/models/kmeans_34.pickle'
+
+#model_file = '../data/models/kmeans_10.pickle'
 scaler_file = '../data/models/scaler.pickle'
 data_file = '../data/song_data.csv'
 

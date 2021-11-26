@@ -14,6 +14,8 @@ class WebCrawler():
 
     def __init__(self) -> None:
         self.music_table = None
+        if self.load_data_from_csv():
+            print('top 100 loaded')
         pass
     
 
@@ -66,6 +68,10 @@ class WebCrawler():
         return self.music_table['artist']
         pass
 
+    def get_songs_from_tabel(self) -> list:
+        #print(self.music_table['song'].unique())
+        return self.music_table['song'].tolist()
+        
     def search_web_page(self, url_name):
         pass
 

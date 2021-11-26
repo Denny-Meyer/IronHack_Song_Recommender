@@ -82,9 +82,9 @@ class SpotifyHandler:
     def search_for_song(self, song_title:str, artist_name = ''):
         res = None
         if artist_name == '':
-            res = self.sp.search(q='track:' + song_title, type='track', limit=5)
+            res = self.sp.search(q='track:' + song_title, type='track', limit=3)
         else:
-            res = self.sp.search(q='track:' + song_title + ' artist:'+ artist_name , type='track', limit=5)
+            res = self.sp.search(q='track:' + song_title + ' artist:'+ artist_name , type='track', limit=3)
         req = []
         for i in res['tracks']['items']:
             req.append([i['name'], i['artists'][0]['name'], i['uri']])

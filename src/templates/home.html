@@ -4,6 +4,7 @@
     <div class="container">
         <h1>{{title}}</h1>
         <p>{{description}}</p>
+        <h3 class="hottie">{{hotlist}}</h3>
         <form method="post">
             <p>       
                 <input type="text" name="search_text">
@@ -32,7 +33,11 @@
                         </div>
                     </div>
                     {% endfor %}
+                    <div class="col">
+                        <p>Recommendation</p>
+                    </div>
                 </div>
+                
             </div>
             <iframe src={{recommend}} width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
         </div>
